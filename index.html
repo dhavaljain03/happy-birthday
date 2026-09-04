@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Section 1: Landing Envelope -->
+  <section id="section1" class="page-section">
+    <h1>Hello Cutieeee</h1>
+    <p>HAPPIEST BIRTHDAY TITHIII !! ♡</p>
+    <div id="envelope" onclick="scrollToSection('section2')">
+      <div class="wax-seal">❤️</div>
+      <p>TAP TO OPEN</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Song -->
+  <section id="section2" class="page-section">
+    <h2>Happy 18th Birthday Your Highness 👑🎀✨</h2>
+    <p>May your 18th be filled with beautiful moments, endless smiles, and memories worth keeping 💗</p>
+
+    <div class="music-card">
+      <p>something special for you...</p>
+      <audio controls src="assest/song.mp3"></audio>
+    </div>
+
+    <button onclick="scrollToSection('section3')" style="margin-top: 25px;">See Photo Album ➔</button>
+  </section>
+
+  <!-- Section 3: Photo Album -->
+  <section id="section3" class="page-section">
+    <h2>A Few of My Favourites 🎀</h2>
+    <p>a few of my favourite moments of you ♡</p>
+    <div class="photo-card">
+      <img src="assest/photo1.jpg" alt="Memory" id="album-img">
+      <p id="album-caption">MEMORY 01/03 - A Moment Worth Keeping !!</p>
+      <button onclick="nextPhoto()">Next Photo ➔</button>
+    </div>
+
+    <button onclick="scrollToSection('section4')" style="margin-top: 25px;">Open Bouquet ➔</button>
+  </section>
+
+  <!-- Section 4: Bouquet Cards -->
+  <section id="section4" class="page-section">
+    <h2>A Garden of  wishes</h2>
+    <p>pick each flower — there's a little wish inside ♡</p>
+    <div class="cards-container">
+      <div class="wish-card" onclick="revealWish(this, 'Keep that smile- its one of my favourite thing ❤️')">
+        <span>🌸</span>
+        <p>PICK ME</p>
+      </div>
+      <div class="wish-card" onclick="revealWish(this, 'Keep the stories/Tea comming- I will always listen')">
+        <span>🌷</span>
+        <p>PICK ME</p>
+      </div>
+      <div class="wish-card" onclick="revealWish(this, 'May you achive all of your dreams we talked about🧿')">
+        <span>🌹</span>
+        <p>PICK ME</p>
+      </div>
+    </div>
+
+    <button onclick="scrollToSection('section5')" style="margin-top: 25px;">Read Final Letter ➔</button>
+  </section>
+
+  <!-- Section 5: Letter Modal -->
+  <section id="section5" class="page-section">
+    <div class="letter-preview">
+      <span style="font-size: 2.5rem;">🐱</span>
+      <h2>happy birthday ♡</h2>
+      <button onclick="openLetter()">READ A LETTER ➔</button>
+    </div>
+
+    <div id="letter-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeLetter()">&times;</span>
+        <h2>A LETTER, JUST FOR YOU</h2>
+        <h3>MY ROYAL HIGHNESS,</h3>
+        <p>Happiest 18 Birthday TITHI!!❤️ I was going to get you a real gift, but then I remembered having me as a friend is gift enough.😌😌
+Thank you for being the person I can share the random thoughts, the endless gossip, the stupid jokes, and all the little things with. Life is just a little more fun with you in it.
+I hope you always know how loved, appreciated, and special you are — not just today, but on all the ordinary days too✨️✨️.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script1.js"></script>
+</body>
+</html>
